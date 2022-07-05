@@ -140,3 +140,4 @@ app.listen(port, "0.0.0.0", function () {
 });
 
 module.exports = app;
+module.exports.handler = serverless(app);
