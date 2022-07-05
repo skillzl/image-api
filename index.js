@@ -140,6 +140,25 @@ app.get("/pussy", (req, res) => {
     }
 })
 
+app.get("/test", (req, res) => {
+    const result = {}
+
+    result.code = 200
+
+    const imageList = fs.readdirSync(path.join(__dirname, ".", "public", "test"))
+    const randomImage = imageList[Math.floor(Math.random() * imageList.length)]
+
+    if (!imageList.length) {
+        result.code = 404
+        result.url = `error: no images available`
+    } else {
+        result.url = `https://api.skillzl.me/test/${randomImage}`
+        res.header("Content-type", "application/json; charset=utf-8")
+    }
+        res.send(JSON.stringify(result, null, 2))
+        console.log(result)
+})
+
 app.listen(port, "0.0.0.0", function () {
     console.log(`Server listening on port ${port}\n`)
 });

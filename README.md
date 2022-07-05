@@ -16,6 +16,8 @@ All the sessions are maintained on  `vercel`  by  [sklz.](https://skillzl.me/)
 ## Endpoints
 
 ```
+:/test
+
 :/anal{?apikey}
 
 :/gif{?apikey}
