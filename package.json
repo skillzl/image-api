@@ -1,0 +1,35 @@
+{
+  "name": "image-api",
+  "version": "1.0.1",
+  "type": "module",
+  "description": "A simple express server written to generate random pictures by using types.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint ./",
+    "lint:fix": "eslint --fix ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skillzl/image-api.git"
+  },
+  "author": "HELLSNAKES",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/skillzl/image-api/issues"
+  },
+  "homepage": "hhttps://github.com/skillzl/image-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.0",
+    "express-rate-limit": "^6.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0"
+  }
+}
