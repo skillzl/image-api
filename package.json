@@ -3,9 +3,9 @@
   "version": "1.0.1",
   "type": "module",
   "description": "A simple express server written to generate random pictures by using types.",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js --output public",
+    "start": "node index.js --output public",
     "lint": "eslint ./",
     "lint:fix": "eslint --fix ./"
   },

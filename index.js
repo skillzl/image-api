@@ -35,7 +35,7 @@ app.get("/anal", (req, res) => {
         result.code = 404
         result.url = `error: no images available`
     } else {
-        result.url = `127.0.0.1:5000/anal/${randomImage}`
+        result.url = `https://api.skillzl.me/anal/${randomImage}`
         result.key = key;
         res.header("Content-type", "application/json; charset=utf-8")
     }
@@ -64,7 +64,7 @@ app.get("/gif", (req, res) => {
         result.code = 404
         result.url = `error: no images available`
     } else {
-        result.url = `127.0.0.1:5000/gif/${randomImage}`
+        result.url = `https://api.skillzl.me/gif/${randomImage}`
         result.key = key;
         res.header("Content-type", "application/json; charset=utf-8")
     }
@@ -92,7 +92,7 @@ app.get("/boobs", (req, res) => {
         result.code = 404
         result.url = `error: no images available`
     } else {
-        result.url = `127.0.0.1:5000/boobs/${randomImage}`
+        result.url = `https://api.skillzl.me/boobs/${randomImage}`
         result.key = key;
         res.header("Content-type", "application/json; charset=utf-8")
     }
@@ -120,7 +120,7 @@ app.get("/pussy", (req, res) => {
         result.code = 404
         result.url = `error: no images available`
     } else {
-        result.url = `127.0.0.1:5000/pussy/${randomImage}`
+        result.url = `https://api.skillzl.me/pussy/${randomImage}`
         result.key = key;
         res.header("Content-type", "application/json; charset=utf-8")
     }
@@ -137,6 +137,6 @@ app.get("/pussy", (req, res) => {
 
 app.listen(port, "0.0.0.0", function () {
     console.log(`Server listening on port ${port}\n`)
-})
+});
 
-module.exports = server;
+module.exports = app;
