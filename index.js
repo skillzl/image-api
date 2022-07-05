@@ -3,6 +3,7 @@ import express from "express"
 import fs from "fs"
 import cors from "cors"
 import rateLimit from "express-rate-limit"
+import path from "path"
 
 const port = process.env.PORT || 8080
 const app = express()
@@ -28,7 +29,7 @@ app.get("/anal", (req, res) => {
 
     result.code = 200
 
-    const imageList = fs.readdirSync(".public/anal")
+    const imageList = fs.readdirSync(path.join(__dirname, ".", "public", "anal"))
     const randomImage = imageList[Math.floor(Math.random() * imageList.length)]
 
     if (!imageList.length) {
