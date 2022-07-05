@@ -27,5 +27,5 @@ All the sessions are maintained on  `vercel`  by  [sklz.](https://skillzl.me/)
 :/pussy{?apikey}
 ```
 
-## Endpoints
+## License
 This project is licensed under the Apache License 2.0 License - see the [LICENSE](https://github.com/skillzl/image-api/blob/main/LICENSE) file for details.
