@@ -4,7 +4,7 @@ import fs from "fs"
 import cors from "cors"
 import rateLimit from "express-rate-limit"
 
-const port = process.env.PORT || 3030
+const port = process.env.PORT || 5000
 const app = express()
 
 const limiter = rateLimit({
@@ -138,3 +138,5 @@ app.get("/pussy", (req, res) => {
 app.listen(port, "0.0.0.0", function () {
     console.log(`Server listening on port ${port}\n`)
 })
+
+module.exports = server;
