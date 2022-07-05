@@ -4,6 +4,7 @@ import fs from "fs"
 import cors from "cors"
 import rateLimit from "express-rate-limit"
 import path from "path"
+import { fileURLToPath } from 'url';
 
 const port = process.env.PORT || 8080
 const app = express()
@@ -14,7 +15,9 @@ const limiter = rateLimit({
 })
 
 const api_key = process.env.API_KEY;
-__dirname = path.resolve(path.dirname(''));
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 app.use(express.static("public"))
 app.use(limiter)
