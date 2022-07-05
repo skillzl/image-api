@@ -62,7 +62,7 @@ app.get("/gif", (req, res) => {
 
     result.code = 200
 
-    const imageList = fs.readdirSync("./public/gif")
+    const imageList = fs.readdirSync(path.join(__dirname, ".", "public", "gif"))
     const randomImage = imageList[Math.floor(Math.random() * imageList.length)]
 
     if (!imageList.length) {
@@ -90,7 +90,7 @@ app.get("/boobs", (req, res) => {
 
     result.code = 200
 
-    const imageList = fs.readdirSync("./public/boobs")
+    const imageList = fs.readdirSync(path.join(__dirname, ".", "public", "boobs"))
     const randomImage = imageList[Math.floor(Math.random() * imageList.length)]
 
     if (!imageList.length) {
@@ -118,7 +118,7 @@ app.get("/pussy", (req, res) => {
 
     result.code = 200
 
-    const imageList = fs.readdirSync("./public/pussy")
+    const imageList = fs.readdirSync(path.join(__dirname, ".", "public", "pussy"))
     const randomImage = imageList[Math.floor(Math.random() * imageList.length)]
 
     if (!imageList.length) {
