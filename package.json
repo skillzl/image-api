@@ -5,7 +5,7 @@
   "description": "A simple express server written to generate random pictures by using types.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node server.js --output public",
     "lint": "eslint ./",
     "lint:fix": "eslint --fix ./"
   },
