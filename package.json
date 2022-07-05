@@ -9,6 +9,9 @@
     "lint": "eslint ./",
     "lint:fix": "eslint --fix ./"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/skillzl/image-api.git"
