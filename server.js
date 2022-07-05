@@ -4,7 +4,7 @@ import fs from "fs"
 import cors from "cors"
 import rateLimit from "express-rate-limit"
 
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 3030
 const app = express()
 
 const limiter = rateLimit({
