@@ -14,6 +14,7 @@ const limiter = rateLimit({
 })
 
 const api_key = process.env.API_KEY;
+__dirname = path.resolve(path.dirname(''));
 
 app.use(express.static("public"))
 app.use(limiter)
