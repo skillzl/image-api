@@ -20,6 +20,8 @@ All the sessions are maintained on  `vercel`  by  [sklz.](https://skillzl.me/)
 
 :/anal{?apikey}
 
+:/ass{?apikey}
+
 :/gif{?apikey}
 
 :/boobs{?apikey}
