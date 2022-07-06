@@ -24,7 +24,7 @@ app.use(limiter)
 app.use(cors())
 
 app.get("/", (req, res) => {
-    res.send(`<a href="https://github.com/skillzl/image-api">github.com/skillzl/image-api</a>`)
+    res.redirect('https://github.com/skillzl/image-api');
 })
 
 app.get("/anal", (req, res) => {
