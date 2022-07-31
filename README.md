@@ -18,15 +18,15 @@ All the sessions are maintained on  `vercel`  by  [sklz.](https://skillzl.me/)
 ```
 :/test
 
-:/anal{?apikey}
+:/anal{?key}
 
-:/ass{?apikey}
+:/ass{?key}
 
-:/gif{?apikey}
+:/gif{?key}
 
-:/boobs{?apikey}
+:/boobs{?key}
 
-:/pussy{?apikey}
+:/pussy{?key}
 ```
 
 ## License
