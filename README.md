@@ -2,7 +2,6 @@
 > <img  style="border-radius: 200px;"  src="https://japi.rest/discord/v1/user/565960314970177556/avatar?size=512"  width="20"/> skillzl<strong>#7600</strong><br/> image-api
 
   
-
 A simple express server written to generate random pictures by using types.
 
 ## Deployment & Features
@@ -18,15 +17,9 @@ All the sessions are maintained on  `vercel`  by  [sklz.](https://skillzl.me/)
 ```
 :/test
 
-:/anal{?key}
+:/dog{?key}
 
-:/ass{?key}
-
-:/gif{?key}
-
-:/boobs{?key}
-
-:/pussy{?key}
+:/cat{?key}
 ```
 
 ## License
