@@ -22,5 +22,8 @@ All the sessions are maintained on  `vercel`  by  [sklz.](https://skillzl.me/)
 :/cat{?key}
 ```
 
+> **Public API Key**: `mr8es2r0hK0bk3s6IAyqT6j6vW01A2`
+> **Note**: The photos are of my own pets 😂
+> 
 ## License
 This project is licensed under the Apache License 2.0 License - see the [LICENSE](https://github.com/skillzl/image-api/blob/main/LICENSE) file for details.
