@@ -40,7 +40,7 @@ app.get("/cat", (req, res) => {
         result.code = 404
         result.url = `error: no images available`
     } else {
-        result.url = `https://api.skillzl.me/cat/${randomImage}`
+        result.url = `https://api.skillzl.dev/cat/${randomImage}`
         result.key = key;
         res.header("Content-type", "application/json; charset=utf-8")
     }
@@ -69,7 +69,7 @@ app.get("/dog", (req, res) => {
         result.code = 404
         result.url = `error: no images available`
     } else {
-        result.url = `https://api.skillzl.me/dog/${randomImage}`
+        result.url = `https://api.skillzl.dev/dog/${randomImage}`
         result.key = key;
         res.header("Content-type", "application/json; charset=utf-8")
     }
@@ -97,7 +97,7 @@ app.get("/test", (req, res) => {
         result.code = 404
         result.url = `error: no images available`
     } else {
-        result.url = `https://api.skillzl.me/test/${randomImage}`
+        result.url = `https://api.skillzl.dev/test/${randomImage}`
         res.header("Content-type", "application/json; charset=utf-8")
     }
         res.send(JSON.stringify(result, null, 2))
