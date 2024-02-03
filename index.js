@@ -95,7 +95,7 @@ app.get("/gifs", (req, res) => {
 
     const randomNumber = Math.floor(Math.random() * 140) + 1;
   
-    const url = process.env.GIFS_LINK + `${randomNumber}`;
+    const url = `${process.env.GIFS_LINK + randomNumber}`;
   
     axios.get(url)
     .then((response) => {
