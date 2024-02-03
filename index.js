@@ -118,6 +118,7 @@ app.get("/gifs", (req, res) => {
         result.url = `error: no images available`;
       } else {
         result.url = `${randomImage}`;
+        result.nsfw = true;
         result.key = key;
         res.header("Content-type", "application/json; charset=utf-8");
       }

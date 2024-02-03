@@ -4,7 +4,7 @@
   "description": "A simple express server written to generate random pictures by using types.",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
