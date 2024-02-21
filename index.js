@@ -26,22 +26,7 @@ app.use(limiter);
 app.use(cors());
 
 app.get("/", (req, res) => {
-    const apps = [
-        {
-            name: "cat",
-            endpoint: "https://api.skillzl.dev/cat?key=YOUR_API_KEY"
-        },
-        {
-            name: "dog",
-            endpoint: "https://api.skillzl.dev/dog?key=YOUR_API_KEY"
-        },
-        {
-            name: "test",
-            endpoint: "https://api.eres.fun/test"
-        }
-    ];
-
-    res.json(apps);
+    res.redirect('https://github.com/skillzl/image-api');
 });
 
 app.get("/cat", (req, res) => {
