@@ -20,7 +20,6 @@ const limiter = rateLimit({
 });
 
 const api_key = process.env.API_KEY;
-const nfsw_key = process.env.NSFW_KEY;
 
 app.use(express.static("public"));
 app.use(limiter);
