@@ -8,9 +8,6 @@ const rateLimit = require("express-rate-limit");
 const fs = require("fs");
 const path = require("path");
 
-const cheerio = require("cheerio");
-const axios = require("axios");
-
 const port = process.env.PORT || 8080;
 const app = express();
 
@@ -26,7 +23,22 @@ app.use(limiter);
 app.use(cors());
 
 app.get("/", (req, res) => {
-    res.redirect('https://github.com/skillzl/image-api');
+    const apps = [
+        {
+            name: "cat",
+            endpoint: "https://api.skillzl.dev/cat?key=YOUR_API_KEY"
+        },
+        {
+            name: "dog",
+            endpoint: "https://api.skillzl.dev/dog?key=YOUR_API_KEY"
+        },
+        {
+            name: "test",
+            endpoint: "https://api.eres.fun/test"
+        }
+    ];
+
+    res.json(apps);
 });
 
 app.get("/cat", (req, res) => {
