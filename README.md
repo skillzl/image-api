@@ -1,7 +1,7 @@
 
 > <img  style="border-radius: 200px;"  src="https://japi.rest/discord/v1/user/565960314970177556/avatar?size=512"  width="20"/> skillzl<br/> image-api
   
-A simple express server written to generate random pictures by using types.
+🖼️ A simple express server written to generate random pictures.
 
 ## Deployment & Features
 
@@ -14,18 +14,15 @@ All the sessions are maintained on  `vercel`  by  [skillzl](https://github.com/s
 ## Endpoints
 
 ```
-:/test
+:/cat{?key}
 
 :/dog{?key}
 
-:/cat{?key}
-
-:/gifs{?nsfw_key}
+:/test
 ```
 
 > **Public API Key**: `mr8es2r0hK0bk3s6IAyqT6j6vW01A2`
-> *NSFW Key*: `N/A`
 > **Note**: The photos are of my own pets 😂
 > 
 ## License
-This project is licensed under the Apache License 2.0 License - see the [LICENSE](https://github.com/skillzl/image-api/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/skillzl/image-api/blob/main/LICENSE) file for details.
